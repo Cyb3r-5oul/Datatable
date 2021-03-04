@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap" rel="stylesheet">
+
 	<link rel="stylesheet" href="styles.css">
 	<script src="script.js"></script>
 	<title>
@@ -20,8 +23,9 @@
 	  </div>
 	</div>
 
+	<input type="text" id="searchbar" placeholder=" Search" oninput="search()">
 
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	
 
 	<div class="Table" id="table">
 		<div class="Heading">
@@ -45,197 +49,13 @@
             </div>
         </div>
 
-        
-        <div class="Row" id="row0">
-            <div class="Cell">
-                <p>x</p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-        </div>
-
-        <div class="Row" id="row1">
-            <div class="Cell">
-                <p>x</p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-        </div>
-
-        <div class="Row" id="row2">
-            <div class="Cell">
-                <p>x</p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-        </div>
-
-        <div class="Row" id="row3">
-            <div class="Cell">
-                <p>x</p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-        </div>
-
-        <div class="Row" id="row4">
-            <div class="Cell">
-                <p>x</p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-        </div>
-
-        <div class="Row" id="row5">
-            <div class="Cell">
-                <p>x</p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-        </div>
-
-        <div class="Row" id="row6">
-            <div class="Cell">
-                <p>x</p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-        </div>
-
-        <div class="Row" id="row7">
-            <div class="Cell">
-                <p>x</p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-        </div>
-
-        <div class="Row" id="row8">
-            <div class="Cell">
-                <p></p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-            <div class="Cell">
-                <p></p>
-            </div>
-        </div>
+    </div>
 
 
+    <div class="pagination">
+    	<button class="btn" id="prev" onclick="changeData('prev')">Previous</button>
+    	
+    	<button class="btn" id="next" onclick="changeData('next')">Next</button>
     </div>
 
 </body>
