@@ -3,6 +3,15 @@
     padding: 0;
 }
 
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+button {
+	width: 40px;
+	height: 30px;
+}
+
 .dropbtn {
   margin-left: 400px;		
   background-color: #4CAF50;
@@ -10,6 +19,8 @@
   padding: 16px;
   font-size: 16px;
   border: none;
+  width: 80px;
+  height: 50px;
 }
 
 .dropdown {
@@ -40,11 +51,22 @@
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
+
+input {
+	width: 400px;
+	height: 40px;
+	margin-left: 200px;
+	border-radius: 25px;
+}
+
 .Table
 {
+	margin-top: 9%;
     display: table;
-    margin-left: 400px;
+    margin-left: 100px;
+    width: 90%;
 }
+
 .Title
 {
     display: table-caption;
@@ -52,18 +74,28 @@
     font-weight: bold;
     font-size: larger;
 }
+
 .Heading
 {
     display: table-row;
     font-weight: bold;
     text-align: center;
+    height: 60px;
 }
+
+.Heading p {
+	margin-top: 10px;
+	font-size: 25px;
+}
+
 .Row
 {
     display: table-row;
 }
+
 .Cell
 {
+	height: 40px;
     display: table-cell;
     border: solid;
     border-width: thin;
@@ -71,7 +103,30 @@
     padding-right: 5px;
 } 
 
-p{
-	font-size: 25px;
+.Cell p{
+	margin-top: 10px;
+	font-size: 20px;
+	text-align: center;
 }
 
+.pagination {
+	margin: 100px 500px;
+}
+
+
+
+#prev {
+	background: grey;
+	color: white;
+	width: 80px;
+	height: 40px;
+	margin-left: 200px;
+}
+
+#next {
+	background: grey;
+	color: white;
+	width: 80px;
+	height: 40px;
+	margin-left: 200px;
+}
